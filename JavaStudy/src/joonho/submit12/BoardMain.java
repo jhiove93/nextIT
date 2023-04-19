@@ -19,7 +19,7 @@ public class BoardMain {
 			if(select == 1) {
 				//TODO 글목록
 				
-				//테스트주석 ㅇㅇㅇ
+				//테스트주석 ㅇㅇㅇㅇㅇ
 			}else if(select == 2) {
 				//TODO 글쓰기
 				
