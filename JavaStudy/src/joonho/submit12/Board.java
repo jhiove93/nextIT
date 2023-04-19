@@ -9,8 +9,8 @@ public class Board {
 	public Board() {}
 	
 	public Board(String title, String toDate, String detail) {
-		super();//이거해야됨 해야됨 
-		this.number = makeBoardNum();
+		BoardDB boardDB = BoardDB.getInstance();
+		this.number = boardDB.makeBoardNum();
 		this.title = title;
 		this.toDate = toDate;
 		this.detail = detail;
