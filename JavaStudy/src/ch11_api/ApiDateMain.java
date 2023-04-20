@@ -67,7 +67,7 @@ public class ApiDateMain {
 		strToday = sdf.format(calToday.getTime());
 		System.out.println(strToday);
 		
-		System.out.println("\n==================================================\n");
+		System.out.println("\n===========================system=======================\n");
 		
 		
 		// 3. System 클래스 사용 
@@ -223,7 +223,7 @@ public class ApiDateMain {
 		diff = diffMillSec / (1000 *60 *60 *24);
 		System.out.println(diff + "일 차이");
 		
-		System.out.println("\n========================================\n");
+		System.out.println("\n===================dday=====================\n");
 		
 		// 디데이 계산기
 		String dday = "2023.05.01";

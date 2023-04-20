@@ -1,27 +1,34 @@
 package joonho.submit12;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Board {
 	int number;
 	String title;
-	String toDate;
 	String detail;
+	String toDate;
 	
 	public Board() {}
 	
-	public Board(String title, String toDate, String detail) {
+	public Board(String title, String detail) {
 		BoardDB boardDB = BoardDB.getInstance();
+		Date write = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+		String dateStr = sdf.format(write);
 		this.number = boardDB.makeBoardNum();
 		this.title = title;
-		this.toDate = toDate;
 		this.detail = detail;
+		this.toDate = dateStr;
 	}
 	
 	
 	
 	
+
 	@Override
 	public String toString() {
-		return "Board [number=" + number + ", title=" + title + ", toDate=" + toDate + ", detail=" + detail + "]";
+		return  "["+number + ". |" + title + "| "+" | " + toDate + "]";
 	}
 
 	public int getNumber() {
