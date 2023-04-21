@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
-import joonho.DateBoard;
+import joonho.submit12.DateBoard;
 
 public class DateBoardMain {
 
